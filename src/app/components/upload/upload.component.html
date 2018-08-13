@@ -2,7 +2,9 @@
     <div class="col-md-6">
         <h4 class="font-weight-normal font-italic text-info">Subir Archivo</h4>
         <hr class="bg-info">
-        <img class="img-responsive img-fluid" src="../../../assets/img/drop_files.jpg" alt="">
+        <div appNgDropFiles (mouseOver)="overDropZone = $event" [ngClass]="{'drop-over': overDropZone}" class="drop-zone animated fadeIn">
+            <img class="img-responsive img-fluid" src="../../../assets/img/drop_files2.jpg" alt="">
+        </div>
     </div>
     <div class="col-md-6">
         <h4 class="font-weight-normal font-italic text-info">Archivos Cargados</h4>
@@ -28,7 +30,7 @@
                         <td>Tamaño del Archivo</td>
                         <td>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%"></div>
                             </div>
                         </td>
                     </tr>

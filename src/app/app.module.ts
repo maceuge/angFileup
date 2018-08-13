@@ -13,13 +13,15 @@ import { HomeComponent } from './components/home/home.component';
 import { UploadComponent } from './components/upload/upload.component';
 import { AppRoutingModule } from './file.routes';
 import { FileUploadService } from './services/file-upload.service';
+import { NgDropFilesDirective } from './directives/ng-drop-files.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    UploadComponent
+    UploadComponent,
+    NgDropFilesDirective
   ],
   imports: [
     BrowserModule,

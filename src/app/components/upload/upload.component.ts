@@ -5,11 +5,12 @@ import { FileUploadService } from '../../services/file-upload.service';
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',
-  styles: []
+  styleUrls: ['./upload.component.css']
 })
 export class UploadComponent implements OnInit {
 
   files: FileItem[] = [];
+  overDropZone = false;
 
   constructor(public servFile: FileUploadService) { }
 
@@ -17,8 +18,11 @@ export class UploadComponent implements OnInit {
 
   uploadFiles () {
     console.log('Cargar Imagenes a Firebase');
-    
     this.servFile.uploadFilesFirebase(this.files);
+  }
+
+  pruebaSobreElemento (event) {
+     console.log(event);
   }
 
 }

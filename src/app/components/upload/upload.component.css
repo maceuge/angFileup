@@ -1,0 +1,12 @@
+.drop-zone {
+    border: 3px dashed #c9c9c9;
+}
+
+
+/* .drop-zone:hover {
+    border: 3px dashed #0a8beb;
+} */
+
+.drop-over {
+    border: 3px dashed #0a8beb;
+}
