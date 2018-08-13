@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-6">
+        <h4 class="font-weight-normal font-italic text-info">Subir Archivo</h4>
+        <hr class="bg-info">
+        <img class="img-responsive img-fluid" src="../../../assets/img/drop_files.jpg" alt="">
+    </div>
+    <div class="col-md-6">
+        <h4 class="font-weight-normal font-italic text-info">Archivos Cargados</h4>
+        <hr class="bg-info">
+
+        <div class="animated fadeInRight">
+            <button type="button" class="btn btn-success mr-3" (click)="uploadFiles()" [disabled]="files.length === 0">Cargar Firebase</button>
+            <button type="button" class="btn btn-danger">Borrar Archivos</button>
+        </div>
+
+        <div class="mt-3 animated fadeIn">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Tamaño</th>
+                        <th scope="col">Progreso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre del Archivo</td>
+                        <td>Tamaño del Archivo</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
