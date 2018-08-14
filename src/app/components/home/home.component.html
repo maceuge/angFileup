@@ -7,11 +7,11 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card-columns">
-            <div class="card animated fadeIn">
-                <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card animated fadeIn" *ngFor="let item of items | async">
+                <img class="card-img-top" [src]="item.url" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Titulo de la imagen</h5>
-                    <p class="card-text">Datos de la imagen</p>
+                    <h5 class="card-title">{{ item.name }}</h5>
+                    <!-- <p class="card-text">Datos de la imagen</p> -->
                 </div>
             </div>
         </div>

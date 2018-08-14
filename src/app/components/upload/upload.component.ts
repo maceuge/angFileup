@@ -12,7 +12,7 @@ export class UploadComponent implements OnInit {
   files: FileItem[] = [];
   overDropZone = false;
 
-  constructor(public servFile: FileUploadService) { }
+  constructor(public servFile: FileUploadService) {  }
 
   ngOnInit() {}
 
