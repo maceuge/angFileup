@@ -21,6 +21,10 @@ export class UploadComponent implements OnInit {
     this.servFile.uploadFilesFirebase(this.files);
   }
 
+  clearFiles () {
+    this.files = [];
+  }
+
   pruebaSobreElemento (event) {
      console.log(event);
   }
